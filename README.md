@@ -6,6 +6,10 @@
     + http://
     + https://
     + www. (for some times ;)
+~ installation: 
+     1. bash install.sh
+      2. python URLOpennerV2.py
+
 ~$ https://github.com/TEGlitcher093
 and...
         Enjoy :>
