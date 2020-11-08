@@ -2,6 +2,7 @@
 from time import sleep as stop
 from os import system as terminal
 from webbrowser import open as web
+import os
 #def part
 def whoimi():
     print('                                      </>Author Info</>    \n')
@@ -9,7 +10,12 @@ def whoimi():
     print('\033[1;37;40m                                  Github   : https://github.com/TEGlitcher093\n')
     print('\033[1;31;40m                                  Telegram : t.me/glichteam\n')
 def tc():
-    terminal('clear')
+    if os.name is 'nt':
+        terminal('cls')
+    elif os.name is 'posix':
+        terminal('clear')
+    else:
+        terminal('clear)
 def space():
     print()
 tc()
